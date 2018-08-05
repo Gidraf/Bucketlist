@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Bucketlist|My BucketList</title>
+    <title>Bucketlist|Register</title>
 
     <link rel="stylesheet" type="text/css" href="static/style.css">
   </head>
@@ -16,9 +16,16 @@
         <div class="navbtn">
           <a href="busketlist.html">My BucketList</a>
           <a href="#">Forum</a>
-          <a id="signin" href="#">Account</a>
+          <a id="signin" href="signin.html">Signin</a>
         </div>
     </nav>
+  </div>
+
+  <div class="clear">
+
+    <div class="slogan">
+      <p>Welcome to BucketList we allow you to record and share things you want to do or experience </p>
+    </div>
   </div>
 
   <div class="clear">
@@ -182,8 +189,6 @@
         <span class="date">time created</span>
         <br>
         <span class="date">before date</span>
-        <textarea name="itemadd" rows="8" placeholder="add item" cols="80"></textarea>
-        <button type="submit" name="button">Add item</button>
         <div class="clear">
 
         </div>
@@ -307,5 +312,27 @@
             </div>
         </div>
       </div>
+
+  <div class="create_bucketlist_modal">
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Create Bucketlist</legend>
+        <label for="title">Bucketlist Title</label>
+        <br>
+        <input type="text" name="title" value="" placeholder="Title">
+        <br>
+        <label for="description">Description</label>
+        <br>
+        <textarea name="description" rows="8" cols="80"></textarea>
+        <br>
+        <label for="before">Before date</label>
+        <br>
+        <input type="date" name="before" value="">
+        <br>
+      </fieldset>
+      <button type="submit" name="button">Create Buketlist</button>
+    </form>
+  </div>
+
   </body>
 </html>
